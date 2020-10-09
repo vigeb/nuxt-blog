@@ -6,7 +6,9 @@
       <nuxt-link to="/" class="text-white hover:text-white active:text-white">
         <svg-icon name="vigeb" class="h-12 w-24" />
       </nuxt-link>
-      <Search />
+      <div class="w-full sm:w-4/6 md:w-80 my-2 md:my-0">
+        <Search />
+      </div>
     </div>
   </header>
 </template>
