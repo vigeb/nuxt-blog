@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    @apply text-base text-blue-900 leading-6 bg-gray-200;
+}
+
+input, button {
+    @apply outline-none text-blue-900;
+}
+
+button {
+    &:focus {
+        @apply border-0 outline-none;
+    }
+}
+
+a {
+    @apply text-teal-400;
+
+    &:hover {
+        @apply text-teal-600;
+    }
+}
+
+h1, h2 {
+    @apply font-bold;
+}
+
+h2, h3 {
+    @apply text-xl;
+}
+
+h3, h4 {
+    @apply font-semibold;
+}
+
+svg {
+    @apply align-middle inline fill-current;
+}
+
+img {
+    @aplly align-middle;
+}

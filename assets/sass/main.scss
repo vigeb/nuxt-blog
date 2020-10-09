@@ -1,0 +1,12 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import './abstract/transition';
+@import './abstract/variables';
+
+@import './global/base';
+
+@import './utilities/clip-path';
+@import './utilities/filter';
+
