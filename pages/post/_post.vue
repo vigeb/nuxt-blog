@@ -1,5 +1,5 @@
 <template>
-  <div class="px-4 pt-24">
+  <div class="px-4 pt-28">
     <nuxt-content :document="doc" />
   </div>
 </template>
@@ -10,8 +10,6 @@ export default {
 
   async asyncData({ $content, params, error }) {
     const doc = await $content('articles', params.post).fetch()
-
-    console.log(doc)
 
     if (!doc)
       return error({
