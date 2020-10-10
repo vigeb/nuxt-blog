@@ -5,11 +5,11 @@
   }
 
   & h1 {
-    @apply uppercase border-b-2 border-teal-400 inline-block mb-4 text-xl;
+    @apply uppercase border-b-2 border-teal-400 inline-block mb-4 text-2xl;
   }
 
   & h3 {
-    @apply border-b border-teal-400 text-xl inline-block my-4 text-base;
+    @apply border-b border-teal-400 text-xl inline-block my-4;
   }
 
   & h4 {
