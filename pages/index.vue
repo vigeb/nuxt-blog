@@ -25,7 +25,7 @@
 <script>
 export default {
   async asyncData({ $content }) {
-    const docs = await $content('articles').sortBy('createdAt').limit(2).fetch()
+    const docs = await $content('articles').sortBy('updatedAt').limit(2).fetch()
 
     return {
       docs,
@@ -44,7 +44,7 @@ export default {
       if (!isVisible) return
 
       const newDocs = await this.$content('articles')
-        .sortBy('createdAt')
+        .sortBy('updatedAt')
         .skip(this.page * 2)
         .limit(2)
         .fetch()
