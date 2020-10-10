@@ -4,7 +4,7 @@
       class="fixed z-10 bottom-0 right-0 p-2 mb-2 bg-white rounded-l-full shadow-3xl"
     >
       <button
-        class="py-2 px-4 rounded-full bg-teal-400 text-white"
+        class="py-2 px-4 rounded-full bg-teal-400 text-white lg:hidden"
         @click.prevent="toggle"
       >
         Mục lục
@@ -67,7 +67,7 @@ export default {
 
   computed: {
     isViewed() {
-      return this.show ? 'translate-x-0' : 'translate-x-full'
+      return this.show ? 'translate-x-0' : 'translate-x-full lg:translate-x-0'
     },
     hasItems() {
       return this.items.length > 0

@@ -1,5 +1,5 @@
 <template>
-  <div class="px-4 pt-28 pb-20">
+  <div class="px-4 sm:px-16 md:px-24 lg:pl-8 lg:pr-88 pt-28 pb-20">
     <h1 class="inline-block border-b-2 text-2xl uppercase border-teal-400 mb-4">
       {{ doc.title }}
     </h1>
@@ -36,7 +36,7 @@
       </ul>
     </div>
     <nuxt-content :document="doc" />
-    <TableOfContents :items="doc.toc" />
+    <LazyTableOfContents :items="doc.toc" />
   </div>
 </template>
 
@@ -52,8 +52,6 @@ export default {
         message: 'error',
         statusCode: 404,
       })
-
-    console.log(doc)
 
     return {
       doc,
