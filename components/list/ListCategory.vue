@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="fixed bottom-0 left-0 py-2 px-4 flex justify-center w-full z-10"
+      class="fixed bottom-0 left-0 py-2 px-4 flex justify-center w-full z-10 lg:hidden"
     >
       <div class="inline-block p-2 bg-white rounded-full shadow-3xl">
         <button
@@ -15,12 +15,15 @@
     </div>
     <div
       :class="isViewed"
-      class="fixed w-full h-full pt-28 top-0 left-0 px-4 transform transition-all duration-500"
+      class="fixed w-full h-full pt-28 top-0 left-0 px-4 transform transition-all duration-500 lg:w-1/4 lg:transform"
     >
       <div
-        class="bg-white shadow-2xl w-full h-full px-4 pt-4 pb-28 rounded-t-lg"
+        class="bg-white shadow-2xl w-full h-full px-4 pt-4 pb-28 rounded-t-lg lg:pb-5"
       >
-        <LazyListCategoryItems />
+        <h3 class="text-base uppercase">Danh mục:</h3>
+        <div class="w-full h-full overflow-y-auto">
+          <LazyListCategoryItems />
+        </div>
       </div>
     </div>
   </div>
@@ -38,7 +41,7 @@ export default {
     isViewed() {
       return this.show
         ? 'translate-y-0 scale-1 opacity-100'
-        : 'translate-y-full scale-0 opacity-0'
+        : 'translate-y-full scale-0 opacity-0 lg:translate-y-0 lg:scale-1 lg:opacity-100'
     },
   },
 

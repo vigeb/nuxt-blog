@@ -31,6 +31,10 @@ module.exports = {
       },
     },
   },
-  variants: {},
+  variants: {
+    translate: ['responsive'],
+    scale: ['responsive'],
+    opacity: ['responsive', 'hover'],
+  },
   plugins: [],
 }
