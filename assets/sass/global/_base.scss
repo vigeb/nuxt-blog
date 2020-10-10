@@ -5,6 +5,7 @@
 
 html {
     font-size: 15px;
+    scroll-behavior: smooth;
 
     @media (min-width: 768px) {
         font-size: 16px;
@@ -52,4 +53,8 @@ svg {
 
 img {
     @aplly align-middle;
+}
+
+ul {
+    @apply list-none;
 }
