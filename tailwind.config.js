@@ -27,8 +27,15 @@ module.exports = {
       maxWidth: {
         '4/5': '80%',
       },
+      borderRadius: {
+        large: '1rem',
+      },
     },
   },
-  variants: {},
+  variants: {
+    translate: ['responsive'],
+    scale: ['responsive'],
+    opacity: ['responsive', 'hover'],
+  },
   plugins: [],
 }
