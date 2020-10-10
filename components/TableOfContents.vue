@@ -12,7 +12,7 @@
     </div>
     <div
       :class="isViewed"
-      class="fixed top-0 right-0 h-full w-80 max-w-full px-4 pt-28 pb-20 bg-white shadow-2xl transform transition-all duration-500"
+      class="fixed top-0 right-0 h-full w-80 max-w-full px-4 pt-28 pb-20 bg-white shadow-2xl transform transition-all duration-500 lg:w-1/4 lg:pb-5"
     >
       <div class="w-full h-full relative">
         <h3 class="text-base uppercase">Mục lục:</h3>
