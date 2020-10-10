@@ -1,0 +1,34 @@
+.nuxt-content {
+
+  & p {
+    @apply my-2;
+  }
+
+  & h1 {
+    @apply uppercase border-b-2 border-teal-400 inline-block mb-4 text-2xl;
+  }
+
+  & h3 {
+    @apply border-b border-teal-400 text-xl inline-block my-4;
+  }
+
+  & h4 {
+    @apply inline-block pl-4 text-green-800 border-t border-green-800 my-2;
+  }
+
+  & strong {
+    @apply text-teal-400 font-semibold;
+  }
+
+  & em {
+    @apply text-teal-500 italic;
+  }
+
+  & img {
+    @apply my-4 max-w-4/5 border-r-8 border-teal-400 rounded-r-lg shadow-2xl;
+  }
+
+  & blockquote {
+    @apply w-full p-4 border-l-2 border-teal-400 bg-gray-200 text-green-700 my-2;
+  }
+}

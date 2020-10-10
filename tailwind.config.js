@@ -19,7 +19,11 @@ module.exports = {
         '3xl': '7px 16px 34px 12px rgb(0 0 0 / 20%)',
       },
       spacing: {
+        28: '7rem',
         80: '20rem',
+      },
+      maxWidth: {
+        '4/5': '80%',
       },
     },
   },

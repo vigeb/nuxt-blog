@@ -4,11 +4,16 @@
 }
 
 html {
-    font-size: 14px;
+    font-size: 15px;
+
+    @media (min-width: 768px) {
+        font-size: 16px;
+    }
 }
 
 body {
-    @apply text-base text-blue-900 leading-6 bg-gray-200;
+    @apply text-base text-blue-900 leading-loose bg-gray-100;
+    font-family: 'Work Sans', sans-serif;
 }
 
 input, button {
