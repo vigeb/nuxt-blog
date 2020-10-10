@@ -8,11 +8,11 @@
     @apply uppercase border-b-2 border-teal-400 inline-block mb-4 text-2xl;
   }
 
-  & h3 {
+  & h2 {
     @apply border-b border-teal-400 text-xl inline-block my-4;
   }
 
-  & h4 {
+  & h3 {
     @apply inline-block pl-4 text-green-800 border-t border-green-800 my-2;
   }
 

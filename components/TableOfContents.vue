@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="hasItems">
     <div
       class="fixed z-10 bottom-0 right-0 p-2 mb-2 bg-white rounded-l-full shadow-3xl"
     >
@@ -18,71 +18,27 @@
         <h3 class="text-base uppercase">Mục lục:</h3>
         <div class="absolute top-0 right-0 w-full h-full pt-12">
           <ul class="h-full overflow-y-auto">
-            <li class="my-3">
-              <nuxt-link to="/shsh" class="inline-block text-teal-500">
-                <span class="ml-2 font-semibold">Danh muc one:</span>
-                <div class="border-t w-full border-teal-400"></div>
-              </nuxt-link>
-            </li>
-            <li class="my-3">
-              <nuxt-link to="/shsh" class="inline-block text-blue-900">
-                <span class="ml-6 border-l border-teal-400 pl-2 italic"
-                  >Danh muc one</span
+            <li v-for="item in items" :key="item.id" class="my-3">
+              <nuxt-link
+                :to="'#' + item.id"
+                class="inline-block"
+                :class="{
+                  'text-teal-500': item.depth === 2,
+                  'text-blue-900': item.depth === 3,
+                }"
+              >
+                <span
+                  :class="{
+                    'ml-2 font-semibold': item.depth === 2,
+                    'ml-6 border-l border-teal-400 pl-2 italic':
+                      item.depth === 3,
+                  }"
+                  >{{ item.text }}</span
                 >
-              </nuxt-link>
-            </li>
-            <li class="my-3">
-              <nuxt-link to="/shsh" class="inline-block text-blue-900">
-                <span class="ml-6 border-l border-teal-400 pl-2 italic"
-                  >Danh muc two</span
-                >
-              </nuxt-link>
-            </li>
-            <li class="my-3">
-              <nuxt-link to="/shsh" class="inline-block text-blue-900">
-                <span class="ml-6 border-l border-teal-400 pl-2 italic"
-                  >Danh muc Three</span
-                >
-              </nuxt-link>
-            </li>
-            <li class="my-3">
-              <nuxt-link to="/shsh" class="inline-block text-teal-500">
-                <span class="ml-2 font-semibold">Danh muc one:</span>
-                <div class="border-t w-full border-teal-400"></div>
-              </nuxt-link>
-            </li>
-            <li class="my-3">
-              <nuxt-link to="/shsh" class="inline-block text-blue-900">
-                <span class="ml-6 border-l border-teal-400 pl-2 italic"
-                  >Danh muc one</span
-                >
-              </nuxt-link>
-            </li>
-            <li class="my-3">
-              <nuxt-link to="/shsh" class="inline-block text-blue-900">
-                <span class="ml-6 border-l border-teal-400 pl-2 italic"
-                  >Danh muc two</span
-                >
-              </nuxt-link>
-            </li>
-            <li class="my-3">
-              <nuxt-link to="/shsh" class="inline-block text-teal-500">
-                <span class="ml-2 font-semibold">Danh muc one:</span>
-                <div class="border-t w-full border-teal-400"></div>
-              </nuxt-link>
-            </li>
-            <li class="my-3">
-              <nuxt-link to="/shsh" class="inline-block text-blue-900">
-                <span class="ml-6 border-l border-teal-400 pl-2 italic"
-                  >Danh muc one</span
-                >
-              </nuxt-link>
-            </li>
-            <li class="my-3">
-              <nuxt-link to="/shsh" class="inline-block text-blue-900">
-                <span class="ml-6 border-l border-teal-400 pl-2 italic"
-                  >Danh muc two</span
-                >
+                <div
+                  v-if="item.depth === 2"
+                  class="border-t w-full border-teal-400"
+                ></div>
               </nuxt-link>
             </li>
           </ul>
@@ -94,6 +50,15 @@
 
 <script>
 export default {
+  props: {
+    items: {
+      type: Array,
+      default() {
+        return []
+      },
+    },
+  },
+
   data() {
     return {
       show: false,
@@ -103,6 +68,15 @@ export default {
   computed: {
     isViewed() {
       return this.show ? 'translate-x-0' : 'translate-x-full'
+    },
+    hasItems() {
+      return this.items.length > 0
+    },
+  },
+
+  watch: {
+    $route() {
+      this.show = false
     },
   },
 

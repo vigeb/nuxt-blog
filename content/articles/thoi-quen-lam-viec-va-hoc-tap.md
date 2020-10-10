@@ -6,13 +6,13 @@ catPath: ca-nhan
 cover: https://firebasestorage.googleapis.com/v0/b/vigeb-nuxt.appspot.com/o/alone-vigeb-500.webp?alt=media&token=7aecbfa8-4685-4c45-ae9d-5c2f825035eb
 ---
 
-### Thích riêng tư một mình:
+## Thích riêng tư một mình
 
 Tôi thường sẽ học tập và làm việc *hiệu quả nhất* khi tôi được yên tĩnh một mình
 
 Bởi vì tôi là người hướng nội, tôi không giỏi ăn nói, nên nhiều lúc chỉ biết im lặng nghe người khác nói...
 
-### Đã thích thì làm KO BIẾT MỆT:
+## Đã thích thì làm KO BIẾT MỆT
 
 Thường thì nếu tôi thích làm việc gì thì tôi sẽ làm không biết mệt, không muốn quan tâm tới thứ khác.
 
@@ -20,19 +20,19 @@ Thường thì nếu tôi thích làm việc gì thì tôi sẽ làm không bi�
 
 Vài ví dụ để bạn tự đánh giá:
 
-#### Về lập trình:
+### Về lập trình:
 
 Bắt đầu từ vài tháng trước, tức là khoảng đầu năm 2020, khi tôi phát hiện ra **mình thích lập trình**, đã có rất nhiều ngày liên tục, tôi ngồi lập trình *không biết mệt* gần như từ sáng tới khuya...
 
 Khuya của tôi là khoảng 09 - 10 giờ tối. Hihi :)
 
-#### Về học tiếng anh hồi học sinh:
+### Về học tiếng anh hồi học sinh:
 
 > Tôi từng dành ra vài giờ đồng hồ mỗi ngày để học tiếng anh kể cả khi có quên tới quên lui...
 
 Có nhiều lúc, học đến nỗi đêm mơ cũng ám ảnh tiếng anh
 
-### Thường TỰ HỌC có mục đích:
+## Thường TỰ HỌC có mục đích
 
 Tôi thường sẽ học tập hiệu quả nhất khi tôi TỰ NGUYỆN học, TỰ NGUYỆN tra cứu, tìm hiểu...
 

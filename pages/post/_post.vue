@@ -9,7 +9,7 @@
       class="max-w-4/5 border-r-8 border-teal-400 rounded-r-lg shadow-2xl my-4"
     />
     <nuxt-content :document="doc" />
-    <TableOfContents />
+    <TableOfContents :items="doc.toc" />
   </div>
 </template>
 
