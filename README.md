@@ -1,5 +1,18 @@
 # src
 
+## Notes:
+
+### Masonry columns (column cards)
+
+Masonry layout is the layout in which the posts are put just like pinterest.com
+
+Use package *colcade*, check it out at [https://github.com/desandro/colcade](https://github.com/desandro/colcade)
+
+```bash
+# install package
+$ npm install colcade --save
+```
+
 ## Build Setup
 
 ```bash

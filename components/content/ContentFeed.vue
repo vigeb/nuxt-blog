@@ -1,10 +1,9 @@
 <template>
-  <div class="w-full flex flex-wrap">
-    <div
-      v-for="(doc, index) in documents"
-      :key="index"
-      class="w-full md:w-3/6 xl:w-1/3 md:px-2"
-    >
+  <div class="w-full flex flex-wrap grid">
+    <div class="w-full md:w-3/6 xl:w-1/3 md:px-2 grid-col"></div>
+    <div class="w-full md:w-3/6 xl:w-1/3 md:px-2 grid-col"></div>
+    <div class="w-full md:w-3/6 xl:w-1/3 md:px-2 grid-col"></div>
+    <div v-for="(doc, index) in documents" :key="index" class="grid-item">
       <div
         class="w-full bg-white rounded-lg shadow-2xl p-4 mb-4 border-t-8 border-teal-400"
       >
@@ -67,6 +66,17 @@ export default {
       type: Boolean,
       default: false,
     },
+  },
+
+  mounted() {
+    this.$colcade.create({
+      name: 'masonry',
+      el: this.$el.querySelector('.grid'),
+      config: {
+        columns: '.grid-col',
+        items: '.grid-item',
+      },
+    })
   },
 }
 </script>
