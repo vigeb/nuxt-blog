@@ -1,7 +1,7 @@
 <template>
   <div v-if="hasItems">
     <div
-      class="fixed z-10 bottom-0 right-0 p-2 mb-2 bg-white rounded-l-full shadow-3xl"
+      class="fixed z-20 bottom-0 right-0 p-2 mb-2 bg-white rounded-l-full shadow-3xl"
     >
       <button
         class="py-2 px-4 rounded-full bg-teal-400 text-white lg:hidden"
