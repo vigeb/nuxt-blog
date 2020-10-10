@@ -35,6 +35,8 @@ module.exports = {
     translate: ['responsive'],
     scale: ['responsive'],
     opacity: ['responsive', 'hover'],
+    backgroundImage: ['hover', 'active'],
+    gradientColorStops: ['hover', 'active'],
   },
   plugins: [],
 }
