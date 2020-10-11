@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="category">
     <nuxt-link
       v-for="(cat, index) in cats"
       :key="index"
