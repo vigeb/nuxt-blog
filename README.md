@@ -6,12 +6,9 @@
 
 Masonry layout is the layout in which the posts are put just like pinterest.com
 
-Use package *colcade*, check it out at [https://github.com/desandro/colcade](https://github.com/desandro/colcade)
+Use css only
 
-```bash
-# install package
-$ npm install colcade --save
-```
+Use column
 
 ## Build Setup
 
