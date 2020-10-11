@@ -26,6 +26,7 @@ module.exports = {
       },
       maxWidth: {
         '4/5': '80%',
+        '9/10': '90%',
       },
       borderRadius: {
         large: '1rem',

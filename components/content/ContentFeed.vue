@@ -1,18 +1,18 @@
 <template>
-  <div class="w-full md:columns-2 md:column-gap-4 lg:columns-3">
+  <div class="w-full md:columns-2 md:column-gap-4">
     <div
       v-for="(doc, index) in documents"
       :key="index"
       class="w-full inside-avoid pb-4"
     >
       <div
-        class="w-full bg-white rounded-lg shadow-2xl p-4 border-t-8 border-teal-400"
+        class="w-full bg-white rounded-lg shadow-2xl p-4 border-t-8 border-teal-400 transition-all duration-500 hover:shadow-3xl hover:border-teal-700"
       >
         <div class="w-full flex items-center justify-between mb-4 relative">
           <div class="flex items-center text-blue-900">
             <nuxt-link
               to="/vigeb"
-              class="w-12 h-12 rounded-full bg-teal-400 text-white leading-12 text-center mr-2 block"
+              class="w-12 h-12 rounded-full bg-teal-400 text-white leading-12 text-center mr-2 block hover:text-white active:text-white"
             >
               <svg-icon name="bear" class="w-6 h-6" />
             </nuxt-link>
@@ -44,10 +44,17 @@
           <p class="mb-2">
             {{ doc.description }}
           </p>
-          <img
-            src="https://cdn.vietnambiz.vn/2019/10/1/skills-needed77043390s-1569911537902383116539.jpg"
-            class="w-full max-w-4/5 border-r-8 border-teal-400 rounded-r-lg shadow-2xl mr-2"
-          />
+          <div
+            class="w-full max-w-9/10 border-r-8 border-teal-400 rounded-r-lg shadow-3xl relative"
+          >
+            <img :src="doc.cover" class="w-full" />
+            <nuxt-link
+              :to="'/post/' + doc.slug"
+              class="w-full absolute bottom-0 left-0 py-2 px-4 text-center block bg-teal-400 hover:bg-teal-500 text-white hover:text-white active:text-white active:bg-teal-500"
+            >
+              Tìm hiểu thêm >>
+            </nuxt-link>
+          </div>
         </nuxt-link>
       </div>
     </div>
