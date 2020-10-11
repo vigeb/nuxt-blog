@@ -6,7 +6,7 @@
     <transition name="opacity-show-up">
       <div
         v-if="show"
-        class="w-full p-4 bg-white rounded-lg shadow-3xl absolute right-0 top-0 mt-16"
+        class="w-full p-4 bg-white rounded-lg shadow-3xl absolute right-0 top-0 mt-16 z-10"
       >
         <div class="flex flex-wrap">
           <div class="flex items-center w-full my-2">
