@@ -1,0 +1,5 @@
+.category {
+  & .nuxt-link-active {
+    @apply bg-gradient-to-r from-green-300 via-teal-400 to-green-400;
+  }
+}
