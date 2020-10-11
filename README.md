@@ -1,5 +1,15 @@
 # src
 
+## Notes:
+
+### Masonry columns (column cards)
+
+Masonry layout is the layout in which the posts are put just like pinterest.com
+
+Use css only
+
+Use column
+
 ## Build Setup
 
 ```bash

@@ -2,6 +2,6 @@
   <div>
     <Header />
     <Nuxt />
-    <LazyListCategory />
+    <LazyListCategory :is-home-page="true" />
   </div>
 </template>
