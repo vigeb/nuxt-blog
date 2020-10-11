@@ -1,7 +1,7 @@
 <template>
   <main>
     <div class="mt-20 pt-16 md:pt-0">
-      <div class="w-full px-4 pb-4 pt-4">
+      <div class="w-full pl-4 pr-4 pb-4 pt-4 lg:pl-1/4 lg:pr-4">
         <ContentCollection />
         <ContentFeed :documents="docs" :is-enough="isEnough" />
         <div v-if="isEnough" class="w-full mt-4 mb-16 text-center">
@@ -57,5 +57,7 @@ export default {
       }
     },
   },
+
+  layout: 'home',
 }
 </script>
