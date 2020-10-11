@@ -44,17 +44,10 @@
           <p class="mb-2">
             {{ doc.description }}
           </p>
-          <div
-            class="w-full max-w-9/10 border-r-8 border-teal-400 rounded-r-lg shadow-3xl relative"
-          >
-            <img :src="doc.cover" class="w-full" />
-            <nuxt-link
-              :to="'/post/' + doc.slug"
-              class="w-full absolute bottom-0 left-0 py-2 px-4 text-center block bg-teal-400 hover:bg-teal-500 text-white hover:text-white active:text-white active:bg-teal-500"
-            >
-              Tìm hiểu thêm >>
-            </nuxt-link>
-          </div>
+          <img
+            :src="doc.cover"
+            class="w-full max-w-9/10 border-r-8 border-teal-400 rounded-r-lg shadow-2xl lazyload"
+          />
         </nuxt-link>
       </div>
     </div>
@@ -62,6 +55,8 @@
 </template>
 
 <script>
+import 'lazysizes'
+
 export default {
   props: {
     documents: {

@@ -16,6 +16,7 @@
     "@nuxtjs/axios": "^5.12.2",
     "@nuxtjs/svg-sprite": "^0.4.12",
     "core-js": "^3.6.5",
+    "lazysizes": "^5.2.2",
     "nuxt": "^2.14.6",
     "vue-click-outside": "^1.1.0",
     "vue-observe-visibility": "^0.4.6"
