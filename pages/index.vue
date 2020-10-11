@@ -51,7 +51,7 @@ export default {
       const newDocs = await this.$content('articles')
         .sortBy('updatedAt')
         .skip(this.page * 10)
-        .limit(2)
+        .limit(10)
         .fetch()
 
       if (newDocs.length) {
