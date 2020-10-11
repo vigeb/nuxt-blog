@@ -1,11 +1,12 @@
 <template>
-  <div class="w-full flex flex-wrap grid">
-    <div class="w-full md:w-3/6 xl:w-1/3 md:px-2 grid-col"></div>
-    <div class="w-full md:w-3/6 xl:w-1/3 md:px-2 grid-col"></div>
-    <div class="w-full md:w-3/6 xl:w-1/3 md:px-2 grid-col"></div>
-    <div v-for="(doc, index) in documents" :key="index" class="grid-item">
+  <div class="w-full md:columns-2 md:column-gap-4 lg:columns-3">
+    <div
+      v-for="(doc, index) in documents"
+      :key="index"
+      class="w-full inside-avoid pb-4"
+    >
       <div
-        class="w-full bg-white rounded-lg shadow-2xl p-4 mb-4 border-t-8 border-teal-400"
+        class="w-full bg-white rounded-lg shadow-2xl p-4 border-t-8 border-teal-400"
       >
         <div class="w-full flex items-center justify-between mb-4 relative">
           <div class="flex items-center text-blue-900">
@@ -16,7 +17,7 @@
               <svg-icon name="bear" class="w-6 h-6" />
             </nuxt-link>
             <div>
-              <nuxt-link to="/vigeb" class="text-blue-900 block font-medium"
+              <nuxt-link to="/vigeb" class="text-blue-900 block font-semibold"
                 >Vigeb</nuxt-link
               >
               <nuxt-link
@@ -45,7 +46,7 @@
           </p>
           <img
             src="https://cdn.vietnambiz.vn/2019/10/1/skills-needed77043390s-1569911537902383116539.jpg"
-            class="w-full h-40"
+            class="w-full max-w-4/5 border-r-8 border-teal-400 rounded-r-lg shadow-2xl mr-2"
           />
         </nuxt-link>
       </div>
@@ -66,17 +67,6 @@ export default {
       type: Boolean,
       default: false,
     },
-  },
-
-  mounted() {
-    this.$colcade.create({
-      name: 'masonry',
-      el: this.$el.querySelector('.grid'),
-      config: {
-        columns: '.grid-col',
-        items: '.grid-item',
-      },
-    })
   },
 }
 </script>

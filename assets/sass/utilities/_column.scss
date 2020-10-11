@@ -1,0 +1,27 @@
+@layer utilities {
+  @responsive {
+    .columns {
+      &-2 {
+        columns: 2;
+      }
+
+      &-3 {
+        columns: 3;
+      }
+    }
+
+    .column {
+      &-gap {
+        &-4 {
+          column-gap: 1rem;
+        }
+      }
+    }
+
+    .inside {
+      &-avoid {
+        break-inside: avoid;
+      }
+    }
+  }
+}
