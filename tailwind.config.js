@@ -19,14 +19,24 @@ module.exports = {
         '3xl': '7px 16px 34px 12px rgb(0 0 0 / 20%)',
       },
       spacing: {
+        14: '3.5rem',
         28: '7rem',
         80: '20rem',
         88: '22rem',
+        160: '40rem',
         '1/4': '25%',
       },
       maxWidth: {
+        '1/4': '25%',
         '4/5': '80%',
         '9/10': '90%',
+      },
+      minWidth: {
+        '3/4': '75%',
+        '4/5': '80%',
+      },
+      maxHeight: {
+        '50vh': '50vh',
       },
       borderRadius: {
         large: '1rem',

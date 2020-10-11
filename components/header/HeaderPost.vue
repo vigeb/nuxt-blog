@@ -1,7 +1,7 @@
 <template>
   <header>
     <div
-      class="fixed top-0 left-0 z-10 w-full py-4 px-4 bg-teal-400 flex items-center justify-between shadow-2xl"
+      class="fixed top-0 left-0 z-30 w-full py-4 px-4 bg-teal-400 flex items-center justify-between shadow-2xl"
     >
       <nuxt-link
         to="/"

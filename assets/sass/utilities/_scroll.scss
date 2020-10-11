@@ -1,0 +1,17 @@
+@layer utilities {
+  @responsive {
+    .scroll {
+      &-none {
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    
+      &-auto {
+        &::-webkit-scrollbar {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
