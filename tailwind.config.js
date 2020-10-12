@@ -36,7 +36,8 @@ module.exports = {
         '4/5': '80%',
       },
       maxHeight: {
-        '50vh': '50vh',
+        '45vh': '45vh',
+        '70vh': '70vh',
       },
       borderRadius: {
         large: '1rem',

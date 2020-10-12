@@ -1,0 +1,7 @@
+.checkbox {
+  &:checked + .checked {
+    &-bg-teal-500 {
+      @apply bg-teal-500;
+    }
+  }
+}
