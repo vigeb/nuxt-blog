@@ -3,6 +3,7 @@
     <div class="px-0 lg:px-6">
       <h1
         class="inline-block border-b-2 text-2xl uppercase border-teal-400 mb-4"
+        id="title-post"
       >
         {{ doc.title }}
       </h1>
@@ -16,6 +17,12 @@
       >
         <h3 class="uppercase mb-4 text-center">Mục lục:</h3>
         <ul>
+          <li class="my-3">
+            <a href="#title-post" class="inline-block text-teal-500">
+              <span class="ml-2 font-semibold">{{ doc.title }}</span>
+              <div class="border-t w-full border-teal-400"></div>
+            </a>
+          </li>
           <li v-for="item in doc.toc" :key="item.id" class="my-3">
             <nuxt-link
               :to="'#' + item.id"
@@ -41,7 +48,7 @@
         </ul>
       </div>
       <nuxt-content :document="doc" />
-      <LazyTableOfContents :items="doc.toc" />
+      <LazyTableOfContents :items="doc.toc" :title-post="doc.title" />
       Icons made by
       <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy"
         >Dave Gandy</a

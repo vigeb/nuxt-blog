@@ -1,5 +1,5 @@
 <template>
-  <div v-if="hasItems">
+  <div>
     <div
       class="fixed z-20 bottom-0 right-0 p-2 mb-2 bg-white rounded-l-full shadow-3xl"
     >
@@ -18,6 +18,12 @@
         <h3 class="text-base uppercase">Mục lục:</h3>
         <div class="absolute top-0 right-0 w-full h-full pt-12">
           <ul class="h-full overflow-y-auto">
+            <li class="my-3">
+              <a href="#title-post" class="inline-block text-teal-500">
+                <span class="ml-2 font-semibold">{{ titlePost }}</span>
+                <div class="border-t w-full border-teal-400"></div>
+              </a>
+            </li>
             <li v-for="item in items" :key="item.id" class="my-3">
               <nuxt-link
                 :to="'#' + item.id"
@@ -57,6 +63,10 @@ export default {
         return []
       },
     },
+    titlePost: {
+      type: String,
+      required: true,
+    },
   },
 
   data() {
@@ -68,9 +78,6 @@ export default {
   computed: {
     isViewed() {
       return this.show ? 'translate-x-0' : 'translate-x-full lg:translate-x-0'
-    },
-    hasItems() {
-      return this.items.length > 0
     },
   },
 
