@@ -52,7 +52,7 @@
       </div>
     </div>
   </div> -->
-  <div ref="grid" class="grid w-full flex flex-wrap">
+  <div class="grid w-full flex flex-wrap">
     <!-- <div class="grid-col w-full md:w-1/2 lg:w-1/3"></div>
     <div class="grid-col w-full md:w-1/2 lg:w-1/3"></div>
     <div class="grid-col w-full md:w-1/2 lg:w-1/3"></div> -->
