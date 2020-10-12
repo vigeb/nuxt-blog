@@ -66,7 +66,6 @@ export default {
 
       this.docs = sortedDocs
       this.page = 1
-      console.log(this.field)
     },
   },
 }

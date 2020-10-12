@@ -1,7 +1,4 @@
-import Masonry from 'masonry-layout'
+import Vue from 'vue'
+import VueColcade from 'vue-colcade'
 
-const grid = document.querySelector('.grid')
-const masonry = new Masonry(grid, {
-  itemSelector: '.grid-item',
-})
-console.log(masonry)
+Vue.use(VueColcade)
