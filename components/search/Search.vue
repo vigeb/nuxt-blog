@@ -31,7 +31,7 @@
           <h3 class="text-center uppercase border-b border-gray-300">
             Search results
           </h3>
-          <div class="mt-2">
+          <div class="my-2">
             <Slide>
               <div slot="slide-items" class="whitespace-no-wrap">
                 <label for="all" class="inline-block mr-1">
