@@ -102,7 +102,10 @@ export default {
   methods: {
     async search() {
       this.isSearching = true
-      const results = await this.$content('articles').search(this.query).fetch()
+      const results = await this.$content('articles')
+        .where()
+        .search(this.query)
+        .fetch()
 
       if (results.length > 0) {
         this.results = results
