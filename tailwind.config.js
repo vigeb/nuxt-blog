@@ -50,6 +50,7 @@ module.exports = {
     opacity: ['responsive', 'hover'],
     backgroundImage: ['hover', 'active'],
     gradientColorStops: ['hover', 'active'],
+    borderWidth: ['responsive', 'hover', 'active', 'focus'],
   },
   plugins: [],
 }

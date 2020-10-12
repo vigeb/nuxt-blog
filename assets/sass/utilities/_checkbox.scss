@@ -1,7 +1,25 @@
-.checkbox {
-  &:checked + .checked {
-    &-bg-teal-500 {
-      @apply bg-teal-500;
+@layer utilities {
+  .checkbox {
+    &:checked + .checked {
+      &-bg-teal-500 {
+        @apply bg-teal-500;
+      }
+  
+      &-bg-transparent {
+        @apply bg-transparent;
+      }
+  
+      &-text-blue-900 {
+        color: #2a4365;
+      }
+  
+      &-border {
+        @apply border;
+      }
+  
+      &-border-gray-400 {
+        @apply border-gray-400;
+      }
     }
   }
 }
