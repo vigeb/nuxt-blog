@@ -31,7 +31,72 @@
           <h3 class="text-center uppercase border-b border-gray-300">
             Search results
           </h3>
-          <Slide />
+          <div class="my-2">
+            <Slide>
+              <div slot="slide-items" class="whitespace-no-wrap">
+                <label for="all" class="inline-block">
+                  <input
+                    id="all"
+                    name="category"
+                    type="radio"
+                    class="checkbox hidden"
+                    checked
+                  />
+                  <div
+                    class="py-1 px-3 bg-teal-300 rounded-lg text-white text-sm cursor-pointer hover:bg-teal-500 active:bg-teal-500 checked-bg-teal-500"
+                  >
+                    Tất cả
+                  </div>
+                </label>
+                <label for="ca-nhan" class="inline-block">
+                  <input
+                    id="ca-nhan"
+                    name="category"
+                    type="radio"
+                    class="checkbox hidden"
+                  />
+                  <div
+                    class="py-1 px-3 text-sm bg-teal-300 rounded-lg text-white cursor-pointer hover:bg-teal-500 active:bg-teal-500 checked-bg-teal-500"
+                  >
+                    Cá nhân
+                  </div>
+                </label>
+                <label for="ky-nang-lap-trinh" class="inline-block">
+                  <input
+                    id="ky-nang-lap-trinh"
+                    name="category"
+                    type="radio"
+                    class="checkbox hidden"
+                  />
+                  <div
+                    class="py-1 px-3 text-sm bg-teal-300 rounded-lg text-white cursor-pointer hover:bg-teal-500 active:bg-teal-500 checked-bg-teal-500"
+                  >
+                    kỹ năng lập trình
+                  </div>
+                </label>
+              </div>
+              <div
+                slot="prev"
+                class="bg-gradient-to-l from-transparent via-white to-white pr-6 py-1 absolute top-0 left-0 hidden md:block"
+              >
+                <button
+                  class="w-8 h-8 rounded-full leading-8 text-center bg-gray-300 hover:text-white mr-2 hover:bg-teal-400 active:bg-teal-400 shadow-2xl"
+                >
+                  <svg-icon name="cheveron-left" class="h-4 w-4" />
+                </button>
+              </div>
+              <div
+                slot="next"
+                class="bg-gradient-to-r from-transparent via-white to-white pl-6 py-1 absolute top-0 right-0 hidden md:block"
+              >
+                <button
+                  class="w-8 h-8 rounded-full leading-8 text-center bg-gray-300 hover:text-white ml-2 hover:bg-teal-400 active:bg-teal-400 shadow-2xl"
+                >
+                  <svg-icon name="cheveron-right" class="h-4 w-4" />
+                </button>
+              </div>
+            </Slide>
+          </div>
           <div class="w-full h-full">
             <div
               class="w-full h-full overflow-y-auto scroll-none max-h-50vh md:scroll-auto"
@@ -48,9 +113,10 @@
                   </nuxt-link>
                   <nuxt-link
                     :to="'/category/' + result.catPath"
-                    class="text-gray-600 italic hover:underline"
+                    class="flex items-center text-gray-600 italic hover:underline"
                   >
-                    >> {{ result.inCategory }}
+                    <svg-icon name="chevrons-right" class="h-4 w-4 mr-2" />
+                    {{ result.inCategory }}
                   </nuxt-link>
                   <p class="truncate">
                     {{ result.description }}
