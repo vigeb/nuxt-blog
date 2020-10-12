@@ -4,6 +4,7 @@
       v-click-outside="stopSearch"
       class="w-full relative"
       @submit.prevent="search"
+      @keydown.enter.prevent="search"
     >
       <input
         v-model="query"
@@ -20,34 +21,34 @@
     </form>
     <div
       v-if="isSearching"
-      class="fixed pt-20 pb-20 md:absolute md:w-160 md:max-h-60vh md:pt-0 md:pb-0 md:mt-14 top-0 right-0 w-full h-full md:h-auto"
+      class="fixed w-full mt-20 md:absolute md:w-160 md:pt-0 md:pb-0 md:mt-14 top-0 right-0"
     >
       <div
         :class="isHome"
         class="bg-white w-full lg:w-160 p-4 rounded-lg shadow-3xl h-full overflow-hidden"
       >
-        <div class="w-full relative h-full">
+        <div class="w-full h-full">
           <h3 class="text-center uppercase border-b border-gray-300">
             Search results
           </h3>
-          <div
-            class="absolute md:relative top-0 left-0 w-full h-full pt-10 md:pt-0"
-          >
+          <Slide />
+          <div class="w-full h-full">
             <div
-              class="w-full h-full overflow-y-auto scroll-none md:max-h-50vh md:scroll-auto"
+              class="w-full h-full overflow-y-auto scroll-none max-h-50vh md:scroll-auto"
             >
-              <div
+              <nuxt-link
                 v-for="(result, index) in results"
                 :key="index"
-                class="flex border-l-2 border-teal-400 my-3"
+                :to="'/post/' + result.slug"
+                class="flex border-l-2 border-teal-400 my-3 text-blue-900 hover:text-blue-900"
               >
                 <div class="min-w-3/4 ml-2">
                   <nuxt-link :to="'/post/' + result.slug" class="text-blue-900">
-                    <h3 class="text-xl">{{ result.title }}</h3>
+                    <h3 class="text-base">{{ result.title }}</h3>
                   </nuxt-link>
                   <nuxt-link
                     :to="'/category/' + result.catPath"
-                    class="text-gray-600 italic"
+                    class="text-gray-600 italic hover:underline"
                   >
                     >> {{ result.inCategory }}
                   </nuxt-link>
@@ -56,9 +57,9 @@
                   </p>
                 </div>
                 <div class="max-w-1/4">
-                  <img :src="result.cover" class="w-full rounded-lg" />
+                  <img :src="result.cover" class="w-full" />
                 </div>
-              </div>
+              </nuxt-link>
             </div>
           </div>
         </div>
@@ -74,6 +75,7 @@ export default {
   directives: {
     ClickOutside,
   },
+
   props: {
     isHomePage: {
       type: Boolean,
@@ -95,6 +97,12 @@ export default {
     },
   },
 
+  watch: {
+    $route() {
+      this.isSearching = false
+    },
+  },
+
   mounted() {
     this.popupItem = this.$el
   },
@@ -105,6 +113,7 @@ export default {
       const results = await this.$content('articles')
         .where()
         .search(this.query)
+        .limit(10)
         .fetch()
 
       if (results.length > 0) {
