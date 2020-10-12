@@ -4,6 +4,7 @@ description: Menu, sidebar, responsive, form điền thông tin, form check,... 
 inCategory: Kỹ năng lập trình
 catPath: ky-nang-lap-trinh
 cover: https://firebasestorage.googleapis.com/v0/b/vigeb-nuxt.appspot.com/o/alone-vigeb-500.webp?alt=media&token=7aecbfa8-4685-4c45-ae9d-5c2f825035eb
+recommend: 1
 ---
 
 > ✔️ Cứ lướt và xem hết các trang trên trang web này, bạn sẽ hiểu tôi làm được những gì. Nhưng thứ tôi làm được còn ***hơn thế nữa cơ***. Kkk...
