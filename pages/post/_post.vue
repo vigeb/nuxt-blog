@@ -2,8 +2,8 @@
   <div class="px-4 sm:px-16 md:px-24 lg:pl-1/4 lg:pr-1/4 pt-28 pb-20">
     <div class="px-0 lg:px-6">
       <h1
-        class="inline-block border-b-2 text-2xl uppercase border-teal-400 mb-4"
         id="title-post"
+        class="inline-block border-b-2 text-2xl uppercase border-teal-400 mb-4"
       >
         {{ doc.title }}
       </h1>
