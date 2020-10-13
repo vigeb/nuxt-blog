@@ -6,7 +6,7 @@
 
 Masonry layout is the layout in which the posts are put just like pinterest.com
 
-Use "vue-colcade"
+Use "vue-colcade" check it out here [https://github.com/alexiscolin/vue-colcade](https://github.com/alexiscolin/vue-colcade)
 
 To user vue-colcade with nuxt, just do like this:
 
@@ -21,10 +21,16 @@ $ npm i --save vue-colcade
 
 **Step 2:**
 
+In your component, add html like this:
+
+(for example: in *example.vue*)
+
 ```bash
 # implement html
 <div class="grid">
-  # columns, here, i divided my layout into 3 columns, so I created 3 div with class '.grid-col', but if you want to divide your layout in 2 or more columns, you can create 2 or more div ... 
+  # columns, here, i divided my layout into 3 columns, so I created 3 div with class '.grid-col'
+
+  # But if you want to divide your layout in 2 or more columns, you can create 2 or more div ... 
   <div class="grid-col"></div>
   <div class="grid-col"></div>
   <div class="grid-col"></div>
@@ -46,7 +52,8 @@ $ npm i --save vue-colcade
 
 ```bash
 # implement plugin in directory /plugin/masonry.client.js
-# don't forget the '.client.js' at the end of the file, because nuxt will recognize it as client only plugin, read the document of nuxt here https://nuxtjs.org/guide/plugins/
+
+# Don't forget the '.client.js' at the end of the file, because nuxtjs will recognize it as client side only plugin, read the document of nuxtjs here: https://nuxtjs.org/guide/plugins/
 import Vue from 'vue';
 import VueColcade from 'vue-colcade';
 
@@ -55,7 +62,7 @@ Vue.use(VueColcade);
 
 **Step 4:**
 
-In your vue component, simply add this:
+In your vue component (for example *example.vue*), simply add this:
 
 ```bash
 <template>
@@ -77,6 +84,14 @@ In your vue component, simply add this:
           items: '.grid-item',
         },
       });
+    },
+    
+    beforeUpdate() {
+      this.$colcade.update('yourGridName')
+    },
+
+    beforeDestroy() {
+      this.$colcade.destroy('yourGridName')
     }
   }
 </script>

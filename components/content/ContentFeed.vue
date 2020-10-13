@@ -132,5 +132,13 @@ export default {
       },
     })
   },
+
+  beforeUpdate() {
+    this.$colcade.update('myGridName')
+  },
+
+  beforeDestroy() {
+    this.$colcade.destroy('myGridName')
+  },
 }
 </script>
