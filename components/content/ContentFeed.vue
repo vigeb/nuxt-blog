@@ -52,14 +52,13 @@
       </div>
     </div>
   </div> -->
-  <div class="grid w-full flex flex-wrap">
-    <!-- <div class="grid-col w-full md:w-1/2 lg:w-1/3"></div>
-    <div class="grid-col w-full md:w-1/2 lg:w-1/3"></div>
-    <div class="grid-col w-full md:w-1/2 lg:w-1/3"></div> -->
+  <div class="colc w-full flex flex-wrap">
+    <div class="colc-col w-full md:w-1/2"></div>
+    <div class="colc-col w-full md:w-1/2"></div>
     <div
       v-for="(doc, index) in documents"
       :key="index"
-      class="w-full pb-4 grid-item md:w-1/2 md:pb-4 md:px-2"
+      class="w-full pb-4 colc-item md:px-2"
     >
       <div
         class="w-full bg-white rounded-lg shadow-2xl p-4 border-t-8 border-teal-400 transition-all duration-500 hover:shadow-3xl hover:border-teal-700"
@@ -121,6 +120,25 @@ export default {
         return []
       },
     },
+  },
+
+  mounted() {
+    this.$colcade.create({
+      name: 'myGridName',
+      el: '.colc',
+      config: {
+        columns: '.colc-col',
+        items: '.colc-item',
+      },
+    })
+  },
+
+  beforeUpdate() {
+    this.$colcade.update('myGridName')
+  },
+
+  beforeDestroy() {
+    this.$colcade.destroy('myGridName')
   },
 }
 </script>
