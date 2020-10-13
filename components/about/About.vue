@@ -186,6 +186,35 @@
             <li class="my-2 pl-2 border-b border-teal-400">
               Đọc sách (ko thực sự thích nhưng nhiều lúc vẫn ép bản thân đọc)
             </li>
+            <li class="my-2 pl-2 border-b border-teal-400">
+              Marketing và kinh doanh (cực thích nhưng toàn thất bại)
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="w-full about-item my-4">
+      <div class="w-full bg-white pb-4 shadow-3xl rounded-lg">
+        <h3
+          class="w-full py-3 text-center bg-teal-600 text-white uppercase rounded-t-lg"
+        >
+          Lĩnh vực quan tâm
+        </h3>
+        <div class="px-4">
+          <ul class="mt-4">
+            <li class="my-2 border-l border-teal-400 pl-2">
+              Kinh doanh & Marketing
+            </li>
+            <li class="my-2 border-l border-teal-400 pl-2">Lập trình</li>
+            <li class="my-2 border-l border-teal-400 pl-2">
+              Tinh thần, tư duy
+            </li>
+            <li class="my-2 border-l border-teal-400 pl-2">
+              Ngoại ngữ (tiếng anh)
+            </li>
+            <li class="my-2 border-l border-teal-400 pl-2">
+              Thiết kế (có một chút)
+            </li>
           </ul>
         </div>
       </div>
@@ -195,7 +224,23 @@
         <h3
           class="w-full py-3 text-center bg-teal-400 text-white uppercase rounded-t-lg"
         >
-          Personality
+          Thành tích đặc biệt
+        </h3>
+        <div class="px-4">
+          <ul class="mt-4">
+            <li class="my-2 border-b border-teal-400 border-dashed pl-2">
+              9 năm học sinh giỏi liên tiếp (1-9)
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="w-full about-item my-4">
+      <div class="w-full bg-white pb-4 shadow-3xl rounded-lg">
+        <h3
+          class="w-full py-3 text-center bg-teal-400 text-white uppercase rounded-t-lg"
+        >
+          Thất bại đáng nhớ
         </h3>
       </div>
     </div>
@@ -204,7 +249,7 @@
         <h3
           class="w-full py-3 text-center bg-teal-400 text-white uppercase rounded-t-lg"
         >
-          Sở thích
+          Thương hiệu yêu thích
         </h3>
       </div>
     </div>
