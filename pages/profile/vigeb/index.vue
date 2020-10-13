@@ -8,6 +8,9 @@
           </div>
           <NavTab :items="items">
             <LazyContentGalery slot="nav-1" />
+            <div slot="nav-3" class="mx-2 my-4">
+              <LazyContact />
+            </div>
           </NavTab>
         </div>
       </div>
