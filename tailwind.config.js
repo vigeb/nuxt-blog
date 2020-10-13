@@ -14,6 +14,9 @@ module.exports = {
     extend: {
       lineHeight: {
         12: '3rem',
+        16: '4rem',
+        20: '5rem',
+        28: '7rem',
       },
       boxShadow: {
         '3xl': '7px 16px 34px 12px rgb(0 0 0 / 20%)',
@@ -51,6 +54,9 @@ module.exports = {
     backgroundImage: ['hover', 'active'],
     gradientColorStops: ['hover', 'active'],
     borderWidth: ['responsive', 'hover', 'active', 'focus'],
+    backgroundOpacity: ['responsive', 'group-hover', 'hover', 'active'],
+    backgroundColor: ['responsive', 'hover', 'active', 'focus', 'group-hover'],
+    display: ['responsive', 'hover', 'group-hover', 'focus'],
   },
   plugins: [],
 }
