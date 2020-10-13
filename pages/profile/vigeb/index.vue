@@ -11,6 +11,7 @@
             <div slot="nav-3" class="mx-2 my-4">
               <LazyContact />
             </div>
+            <LazyAbout slot="nav-2" />
           </NavTab>
         </div>
       </div>
@@ -24,7 +25,7 @@ export default {
 
   data() {
     return {
-      items: ['Tác phẩm', 'Hợp tác', 'Liên hệ'],
+      items: ['Tác phẩm', 'Giới thiệu', 'Liên hệ'],
     }
   },
 }
