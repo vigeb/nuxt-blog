@@ -6,7 +6,9 @@
           <div class="my-4 mx-2">
             <ProfileAccount />
           </div>
-          <ContentGalery />
+          <NavTab :items="items">
+            <LazyContentGalery slot="nav-1" />
+          </NavTab>
         </div>
       </div>
     </div>
@@ -16,5 +18,11 @@
 <script>
 export default {
   layout: 'home',
+
+  data() {
+    return {
+      items: ['Tác phẩm', 'Hợp tác', 'Liên hệ'],
+    }
+  },
 }
 </script>

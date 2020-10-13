@@ -15,7 +15,7 @@
         class="w-full h-full absolute top-0 left-0 z-10 group-hover:bg-black group-hover:bg-opacity-50 transition-all duration-500 hidden group-hover:block rounded-lg"
       ></div>
       <div
-        class="absolute bottom-0 left-0 z-10 bg-gradient-to-r from-teal-400 via-blue-400 to-teal-300 rounded-b-lg w-full py-2 px-4 text-center"
+        class="absolute bottom-0 left-0 bg-gradient-to-r from-teal-400 via-blue-400 to-teal-300 rounded-b-lg w-full py-2 px-4 text-center"
       >
         Nguồn:
         <a :href="image.attr" class="text-white hover:text-white">{{
