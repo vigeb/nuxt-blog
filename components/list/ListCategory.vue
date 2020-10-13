@@ -55,6 +55,12 @@ export default {
     },
   },
 
+  watch: {
+    $route() {
+      this.show = false
+    },
+  },
+
   methods: {
     toggle() {
       this.show = !this.show
