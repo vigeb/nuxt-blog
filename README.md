@@ -50,8 +50,10 @@ In your component, add html like this:
 
 **Step 3:**
 
+In /plugins/vueColcade.client.js, add things like this.
+
 ```bash
-# implement plugin in directory /plugin/masonry.client.js
+# implement plugin in directory /plugins/vueColcade.client.js
 
 # Don't forget the '.client.js' at the end of the file, because nuxtjs will recognize it as client side only plugin, read the document of nuxtjs here: https://nuxtjs.org/guide/plugins/
 import Vue from 'vue';
@@ -61,6 +63,17 @@ Vue.use(VueColcade);
 ```
 
 **Step 4:**
+
+Add the plugin into your nuxt.config.js:
+
+```bash
+export default {
+  ...
+  plugins: ['~/plugins/vueColcade.client.js']
+}
+```
+
+**Step 5:**
 
 In your vue component (for example *example.vue*), simply add this:
 
