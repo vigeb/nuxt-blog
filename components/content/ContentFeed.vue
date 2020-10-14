@@ -1,7 +1,7 @@
 <template>
   <div class="colc w-full flex flex-wrap">
     <div class="colc-col w-full md:w-1/2"></div>
-    <div class="colc-col w-full md:w-1/2"></div>
+    <div class="hidden colc-col w-full md:block md:w-1/2 md"></div>
     <div
       v-for="(doc, index) in documents"
       :key="index"
