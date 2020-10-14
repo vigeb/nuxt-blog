@@ -29,6 +29,12 @@ export default {
       type: String,
       required: true,
     },
+    where: {
+      type: Object,
+      default() {
+        return {}
+      },
+    },
   },
 
   data() {
@@ -61,6 +67,7 @@ export default {
       this.field = field
       const sortedDocs = await this.$content(this.fetch)
         .sortBy(this.field, 'asc')
+        .where(this.where)
         .limit(10)
         .fetch()
 

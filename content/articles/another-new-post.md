@@ -1,5 +1,5 @@
 ---
-title: New post
+title: Another new post
 description: Menu, sidebar, responsive, form điền thông tin, form check,... Nói chung, cứ xem giao diện trang web này đi thì sẽ biết (nhưng tôi còn làm được hơn thế nữa:).....
 inCategory: Kỹ năng lập trình
 catPath: ky-nang-lap-trinh
