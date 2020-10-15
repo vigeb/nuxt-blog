@@ -48,7 +48,7 @@ module.exports = {
     },
   },
   variants: {
-    translate: ['responsive'],
+    translate: ['responsive', 'hover', 'group-hover'],
     scale: ['responsive'],
     opacity: ['responsive', 'hover'],
     backgroundImage: ['hover', 'active'],

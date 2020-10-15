@@ -4,7 +4,7 @@
       <div
         class="w-full border border-dashed border-teal-400 bg-green-100 text-center py-3 text-teal-500 font-semibold"
       >
-        Một số tác phẩm trong này tôi chưa từng làm, nhưng tôi tin mình hoàn
+        Phần lớn tác phẩm trong này tôi chưa từng làm, nhưng tôi tin mình hoàn
         toàn có thể làm được
       </div>
     </div>
