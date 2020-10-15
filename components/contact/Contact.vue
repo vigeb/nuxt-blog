@@ -6,8 +6,9 @@
       >
         <svg-icon name="facebook" class="h-5 w-5 fill-current inline" />
       </div>
-      <a href="#" class="font-semibold border-b pl-2 border-teal-400"
-        >www.facebook.com/shshdd</a
+      <a href="https://www.facebook.com/Kai.Vivtean/"
+      target="_blank" class="font-semibold border-b pl-2 border-teal-400"
+        >facebook.com/Kai.Vivtean/</a
       >
     </div>
     <div class="flex items-center my-2 w-full md:w-1/2">
