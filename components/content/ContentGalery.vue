@@ -2,7 +2,7 @@
   <div class="w-full">
     <div class="w-full px-2 mt-4">
       <div
-        class="w-full border border-dashed border-teal-400 bg-green-100 text-center py-3 text-teal-500 font-semibold"
+        class="w-full border border-dashed border-teal-400 bg-green-100 text-center py-3 px-4 text-teal-500 font-semibold"
       >
         Phần lớn tác phẩm trong này tôi chưa từng làm, nhưng tôi tin mình hoàn
         toàn có thể làm được
