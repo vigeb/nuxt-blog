@@ -14,7 +14,7 @@
 export default {
   async asyncData({ $content }) {
     const docs = await $content('articles')
-      .sortBy('updatedAt')
+      .sortBy('updatedAt', 'desc')
       .limit(10)
       .fetch()
 

@@ -16,7 +16,7 @@ export default {
     const param = params.category
 
     const docs = await $content('articles')
-      .sortBy('updatedAt')
+      .sortBy('updatedAt', 'desc')
       .where({
         catPath: param,
       })

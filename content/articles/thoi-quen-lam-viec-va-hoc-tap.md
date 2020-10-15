@@ -23,7 +23,7 @@ Vài ví dụ để bạn tự đánh giá:
 
 ### Về lập trình:
 
-Bắt đầu từ vài tháng trước, tức là khoảng đầu năm 2020, khi tôi phát hiện ra **mình thích lập trình**, đã có rất nhiều ngày liên tục, tôi ngồi lập trình *không biết mệt* gần như từ sáng tới khuya...
+Bắt đầu từ vài tháng trước, tức là khoảng đầu năm 2020, khi tôi phát hiện ra **mình thích lập trình**, đã có rất nhiều ngày liên tục, tôi ngồi lập trình *không biết mệt* gần như từ sáng tới khuya... (dĩ nhiên là cũng có nghỉ ngơi)
 
 Khuya của tôi là khoảng 09 - 10 giờ tối. Hihi :)
 
@@ -52,3 +52,11 @@ Hồi còn học sinh, tôi từng phải học ngôn ngữ pascal gì gì đó,
 Thế mà, đến một ngày, vì mục đích muốn kinh doanh thứ gì đó, dịch vụ gì đó sáng tạo,... tôi quyết định mình muốn có một website được thiết kế và có những tính năng theo ý mình.
 
 Thế rồi, tôi bắt đầu học lập trình, riết rồi tôi bị yêu lập trình từ khi nào hổng hay.
+
+## Thích vừa học vừa làm
+
+Đối với việc học lập trình, tôi thường không thích học một mạch kiến thức từ đầu tới cuối một cách bài bản.
+
+Thay vào đó, tôi thích...
+
+> Tôi thích thực hành tới đâu học tới đó.

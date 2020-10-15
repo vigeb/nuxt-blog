@@ -49,12 +49,16 @@
       </div>
       <nuxt-content :document="doc" />
       <LazyTableOfContents :items="doc.toc" :title-post="doc.title" />
-      Icons made by
-      <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy"
-        >Dave Gandy</a
-      >
-      from
-      <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+      <div class="my-4 w-full text-center">
+        Icons made by
+        <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy"
+          >Dave Gandy</a
+        >
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon">
+          www.flaticon.com</a
+        >
+      </div>
     </div>
   </div>
 </template>

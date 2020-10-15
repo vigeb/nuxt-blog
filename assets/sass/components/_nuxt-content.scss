@@ -31,4 +31,13 @@
   & blockquote {
     @apply w-full p-4 border-l-2 border-teal-400 bg-gray-200 text-green-700 my-2;
   }
+
+  & ul li {
+    @apply pl-3;
+
+    &:before {
+      content: '\00BB';
+      @apply mr-2 text-teal-400;
+    }
+  }
 }

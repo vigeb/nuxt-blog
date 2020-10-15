@@ -51,7 +51,7 @@ export default {
       if (!isVisible) return
 
       const newDocs = await this.$content('articles')
-        .sortBy(this.field, 'asc')
+        .sortBy(this.field, 'desc')
         .skip(this.page * 10)
         .limit(10)
         .fetch()
@@ -66,7 +66,7 @@ export default {
     async sortBy(field) {
       this.field = field
       const sortedDocs = await this.$content(this.fetch)
-        .sortBy(this.field, 'asc')
+        .sortBy(this.field, 'desc')
         .where(this.where)
         .limit(10)
         .fetch()

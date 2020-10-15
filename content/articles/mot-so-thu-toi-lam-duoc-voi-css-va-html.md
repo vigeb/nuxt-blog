@@ -3,8 +3,8 @@ title: Một số thứ tôi làm được với css và html
 description: Menu, sidebar, responsive, form điền thông tin, form check,... Nói chung, cứ xem giao diện trang web này đi thì sẽ biết (nhưng tôi còn làm được hơn thế nữa:).....
 inCategory: Kỹ năng lập trình
 catPath: ky-nang-lap-trinh
-cover: https://firebasestorage.googleapis.com/v0/b/vigeb-nuxt.appspot.com/o/alone-vigeb-500.webp?alt=media&token=7aecbfa8-4685-4c45-ae9d-5c2f825035eb
-recommend: 1
+cover: https://firebasestorage.googleapis.com/v0/b/vigeb-nuxt.appspot.com/o/ky-nang-html-css-vigeb.webp?alt=media&token=9d0ecfa3-2b84-45a0-b9ad-31e1b0f2b64b
+recommend: 10
 ---
 
 > ✔️ Cứ lướt và xem hết các trang trên trang web này, bạn sẽ hiểu tôi làm được những gì. Nhưng thứ tôi làm được còn ***hơn thế nữa cơ***. Kkk...
@@ -27,7 +27,7 @@ Lập trình giao diện cũng vậy!
 
 Nếu bạn dùng những mã code hiện đại với những công cụ, trình duyệt (như chrome, internet explore,... phiên bản cũ) tỷ lệ cao sẽ ko có nhiều trình duyệt hiểu được.
 
---> **Kết quả trang web của bạn xấu QUẮC**
+--> **Kết quả trang web của bạn xấu QUẮC với một số người xài trình duyệt cũ**
 
 Nhưng nếu bạn tối ưu phiên dịch những mã code hiện đại của bạn thành những mã code xưa hơn một chút, tỷ lệ cao sẽ có thêm nhiều trình duyệt hiểu được nó.
 
@@ -39,10 +39,26 @@ Và tôi biết sơ sơ về cách làm điều đó.
 
 > Tôi biết dùng một số công cụ phổ biến như postcss, autoprefixer, webpack, sass,... (đây là những vũ khí giúp việc tối ưu cho trang web có thể hiển thị ra giao diện đẹp nhất cho nhiều người dùng nhất có thể)
 
+Xem thêm chi tiết về kỹ năng webpack của tôi <nuxt-link to="/post/ky-nang-webpack-toi-uu-code">tại bài viết này</nuxt-link>
+
 ## Xử lý hình ảnh
 
-> Tôi sử dụng được ảnh thường thường cũng như những loại ảnh đồ họa như svg, font icon,...
+> Tôi sử dụng được ảnh thường cũng như những loại ảnh đồ họa như svg, font icon,...
 
 ### Ảnh svg
 
-- Tôi biết chèn ảnh
+Tôi biết sử dụng svg icon (*logo và một số icon trên trang web này chính là dùng svg icon*)
+
+Một số cách dùng icon svg tôi đã dùng:
+
+- Dùng svg icon từ trang web icomoon
+- Với nuxtjs, dùng module '@nuxtjs/svg-sprite'
+
+### Ảnh thông thường (.png, .jpg, .webp, .gif)
+
+- Biết dùng ảnh với thẻ img hoặc picture
+- Biết sơ sơ về việc tối ưu size hình ảnh để load nhanh hơn (*nhưng nếu được học thêm thì càng tốt*)
+
+## Css và html cơ bản
+
+Khỏi bàn cãi, không biết những thứ như vậy thì làm sao viết được trang web như này
