@@ -16,9 +16,9 @@
               <svg-icon name="facebook" class="h-5 w-5" />
             </div>
             <a
-              href="https://www.facebook.com/Kai.Vivtean/"
+              href="https://www.facebook.com/vigeb/"
               class="whitespace-no-wrap font-medium"
-              >facebook.com/Kai.Vivtean/</a
+              >www.facebook.com/vigeb/</a
             >
           </div>
           <div class="flex items-center w-full my-2">
