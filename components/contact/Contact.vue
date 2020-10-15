@@ -4,7 +4,7 @@
       <div
         class="w-10 h-10 rounded-full leading-10 text-center bg-teal-400 text-white mr-2"
       >
-        <svg-icon name="facebook" class="h-5 w-5" />
+        <svg-icon name="facebook" class="h-5 w-5 fill-current inline" />
       </div>
       <a href="#" class="font-semibold border-b pl-2 border-teal-400"
         >www.facebook.com/shshdd</a
@@ -14,7 +14,7 @@
       <div
         class="w-10 h-10 rounded-full leading-10 text-center bg-teal-400 text-white mr-2"
       >
-        <svg-icon name="mobile" class="h-5 w-5" />
+        <svg-icon name="mobile" class="h-5 w-5 fill-current inline" />
       </div>
       <a
         href="mailto:reach2101@gmail.com"
@@ -27,7 +27,7 @@
       <div
         class="w-10 h-10 rounded-full leading-10 text-center bg-teal-400 text-white mr-2"
       >
-        <svg-icon name="envelop" class="h-5 w-5" />
+        <svg-icon name="envelop" class="h-5 w-5 fill-current inline" />
       </div>
       <a
         href="tel:0336086407"
@@ -40,7 +40,7 @@
       <div
         class="w-10 h-10 rounded-full leading-10 text-center bg-teal-400 text-white mr-2"
       >
-        <svg-icon name="location2" class="h-5 w-5" />
+        <svg-icon name="location2" class="h-5 w-5 fill-current inline" />
       </div>
       <span class="font-semibold border-b pl-2 border-teal-400"
         >Phú Nhuận - Hồ Chí Minh</span

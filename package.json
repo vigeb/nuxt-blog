@@ -19,7 +19,6 @@
     "lazysizes": "^5.2.2",
     "lodash": "^4.17.20",
     "nuxt": "^2.14.6",
-    "sal.js": "^0.8.1",
     "vue-click-outside": "^1.1.0",
     "vue-colcade": "^1.2.4",
     "vue-observe-visibility": "^0.4.6"
@@ -34,6 +33,7 @@
     "eslint-plugin-nuxt": "^1.0.0",
     "eslint-plugin-prettier": "^3.1.4",
     "node-sass": "^4.14.1",
+    "nuxt-purgecss": "^1.0.0",
     "prettier": "^2.1.2",
     "sass-loader": "^10.0.2"
   }

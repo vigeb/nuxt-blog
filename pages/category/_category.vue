@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  async asyncData({ $content, params }) {
+  async asyncData({ $content, params, error }) {
     const param = params.category
 
     const docs = await $content('articles')
@@ -22,6 +22,13 @@ export default {
       })
       .limit(10)
       .fetch()
+
+    if (docs.length < 1) {
+      return error({
+        statusCode: 404,
+        message: 'error',
+      })
+    }
 
     return {
       docs,

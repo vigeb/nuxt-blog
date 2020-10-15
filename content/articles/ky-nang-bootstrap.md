@@ -3,7 +3,7 @@ title: Kỹ năng bootstrap
 description: Có thể dùng được bootstrap để viết css cho website cũng như một số hiệu ứng javascript như tooltip, dropdown,...
 inCategory: Kỹ năng lập trình
 catPath: ky-nang-lap-trinh
-cover: https://firebasestorage.googleapis.com/v0/b/vigeb-nuxt.appspot.com/o/ky-nang-bootstrap-vigeb.webp?alt=media&token=3de95216-ed61-45b8-9049-90f891eb0040
+cover: https://firebasestorage.googleapis.com/v0/b/vigeb-nuxt.appspot.com/o/ky-nang-bootstrap-vigeb.webp?alt=media&token=9a2989a7-27e3-4279-9f20-76d0fcf7d7b7
 recommend: 10
 ---
 

@@ -29,6 +29,7 @@ export default {
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
+    'nuxt-purgecss',
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
@@ -57,5 +58,33 @@ export default {
         tailwindcss: join(__dirname, 'tailwind.config.js'),
       },
     },
+    extractCSS: true,
+    html: {
+      minify: {
+        collapseBooleanAttributes: true,
+        decodeEntities: true,
+        minifyCSS: true,
+        minifyJS: true,
+        processConditionalComments: true,
+        removeEmptyAttributes: true,
+        removeRedundantAttributes: true,
+        trimCustomFragments: true,
+        useShortDoctype: true,
+      },
+    },
+    optimization: {
+      minimize: true,
+      minimizer: [
+        // terser-webpack-plugin
+        // optimize-css-assets-webpack-plugin
+      ],
+      splitChunks: {
+        chunks: 'all',
+        automaticNameDelimiter: '.',
+        name: undefined,
+        cacheGroups: {},
+      },
+    },
+    optimizeCSS: true,
   },
 }
