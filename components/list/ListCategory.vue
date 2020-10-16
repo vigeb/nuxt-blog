@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="fixed bottom-0 left-0 py-2 px-4 flex justify-center w-full z-10 lg:hidden"
+      class="fixed bottom-0 left-0 py-2 px-4 flex justify-center w-full z-30 lg:hidden"
     >
       <div class="inline-block p-2 bg-white rounded-full shadow-3xl">
         <button
