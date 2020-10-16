@@ -22,7 +22,7 @@
       >
         <h3 class="text-base uppercase">Danh mục:</h3>
         <div class="w-full h-full overflow-y-auto">
-          <ListCategoryItems />
+          <LazyListCategoryItems />
         </div>
       </div>
     </div>
