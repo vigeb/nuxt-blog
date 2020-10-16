@@ -15,7 +15,7 @@
     </div>
     <div
       :class="[isViewed, isHome]"
-      class="fixed w-full h-full top-0 left-0 px-4 transform transition-all duration-500 md:pt-28 lg:w-1/4 lg:transform"
+      class="fixed w-full h-full top-0 left-0 px-4 transform transition-all duration-500 md:pt-28 lg:w-1/4 lg:transform z-20"
     >
       <div
         class="bg-white shadow-3xl w-full h-full px-4 pt-4 pb-28 rounded-t-lg lg:pb-5"
